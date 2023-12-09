@@ -1,7 +1,7 @@
 // Criação da função para calcular o saldo de rankeadas
 function calcularNivel(vitorias, derrotas) {
     const saldoVitorias = vitorias - derrotas;
-    let nivel = "";
+    let nivel = ""; // Guarda o resultado do cálculo do nível do jogador
 
     // true: código ser executado pelo menos uma vez 
     // Criação do switch case para verificar o saldo de rankeadas em relaçao a diferença de vitória e derrotas do jogador
@@ -28,9 +28,9 @@ function calcularNivel(vitorias, derrotas) {
             nivel = "Imortal";
     }
 
-
+    // Exibição da mensagem com o saldo de rankeadas e o nivel do usuário de acordo com o ranking
     console.log(`O Herói tem saldo de ${saldoVitorias} está no nível de ${nivel}`);
 }
 
-
+// Exemplo de utilização da função passando dois parâmetros (vitória e derrotas)
 calcularNivel(75, 22);
